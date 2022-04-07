@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../TI projekt 1/Styles/form.css">
+    <title>Formularz</title>
+</head>
+
+<body>
+    <h1>Formularz</h1>
+    <form action="">
+        <fieldset>
+            <legend>Podaj imię</legend>
+            <input type="text" id="name">
+        </fieldset>
+        <fieldset>
+            <legend>Podaj nazwisko</legend>
+            <input type="text" id="name">
+        </fieldset>
+        <fieldset>
+            <legend>Podaj płeć</legend>
+            <input type="radio" id="kobieta" name="sex" value="Kobieta">
+            <label for="kobieta">Kobieta</label>
+            <input type="radio" id="mezczyzna" name="sex" value="Mężczyzna">
+            <label for="mezczyzna">Mężczyzna</label>
+            <input type="radio" id="brak" name="sex" value="Nie chcę podawać">
+            <label for="brak">Nie chcę podawać</label>
+        </fieldset>
+        <fieldset>
+            <legend>Skąd pochodzisz?</legend>
+            <select id="whereUFrom" name="regionList">
+                <option value="volvo">Ze wsi</option>
+                <option value="saab">Z miasta</option>
+                <option value="opel">Z metropolii</option>
+            </select>
+
+        </fieldset>
+        <fieldset>
+            <legend>Wybierz ulubiony kolor</legend>
+            <select multiple="multiple" size="2" id="formColor">
+                <option value="czarny" selected>Czarny</option>
+                <option value="biały">Biały</option>
+                <option value="kolorowy">Kolorowy</option>
+                <option value="każdy">Każdy</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend>Wybierz lubianą literaturę</legend>
+            <input type="checkbox" id="Fantasy" name="books" value="Fantasy">
+            <label for="Fantasy">Fantasy</label><br>
+            <input type="checkbox" id="Kryminaly" name="books" value="Kryminały">
+            <label for="Kryminaly">Kryminały</label><br>
+            <input type="checkbox" id="Piekna" name="books" value="Piękna">
+            <label for="Piekna">Piękna</label>
+        </fieldset>
+        <fieldset>
+            <legend>Napisz mi kilka słów o sobie</legend>
+            <textarea name="About" id="formAbout" cols="50" rows="9"></textarea>
+        </fieldset>
+        <fieldset>
+            <legend>Podsumowanie</legend>
+            <button id="endButton">Wyślij formularz</button>
+            <button id="endButton">Wyczyść dane</button>
+        </fieldset>
+    </form>
+
+</body>
+
+</html>
