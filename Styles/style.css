@@ -232,8 +232,8 @@ hr {
 #clock {
     position: absolute;
     height: 50px;
-    width: 200px;
-    right: 50px;
+    width: 100px;
+    right: 4%;
     bottom: 50%;
     transform: translateY(+50%);
     text-align: center;
